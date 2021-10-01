@@ -47,7 +47,7 @@ input[type='checkbox'] {
 	float: right;
 }
 
-.groceryitem-bg {
+.checked {
 	background-color: #fff;
 	padding: 20px;
 }

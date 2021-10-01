@@ -29,8 +29,11 @@ addItem.onclick = function () {
 	itemInput.value = '';
 };
 
+// my code to clear localStorage & the HTML - I added the reload() to refresh the screen.
+// Because even though it cleared the localStorage and the HTML, lets say if you dont refresh the screen and start a new list, it would bring back the old on top of it.
 const clearButton = document.querySelector('.clearbutton');
 clearButton.onclick = function () {
 	localStorage.clear();
 	items.innerHTML = '';
+	location.reload();
 };

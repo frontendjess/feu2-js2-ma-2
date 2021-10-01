@@ -9,12 +9,13 @@ export default function writeToDOM(
 
 	theArrayIAmGoingToCreateHTMLFrom.forEach(function (groceryItem, iteration) {
 		let ischecked = '';
+
 		if (groceryItem.checked) {
 			ischecked = 'checked';
 		}
 
 		domElementIAmGoingToPutHTMLInto.innerHTML += `<li>
-					<span class="groceryitem-bg">${groceryItem.name}</span>
+					<span class="${ischecked}">${groceryItem.name}</span>
 					<input ${ischecked} type="checkbox" class="checkbox" data-id=${groceryItem.id}>
 				</li>`;
 	});
