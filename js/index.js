@@ -28,3 +28,9 @@ addItem.onclick = function () {
 	}
 	itemInput.value = '';
 };
+
+const clearButton = document.querySelector('.clearbutton');
+clearButton.onclick = function () {
+	localStorage.clear();
+	items.innerHTML = '';
+};

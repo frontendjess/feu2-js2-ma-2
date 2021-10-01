@@ -46,3 +46,8 @@ li {
 input[type='checkbox'] {
 	float: right;
 }
+
+.groceryitem-bg {
+	background-color: #fff;
+	padding: 20px;
+}

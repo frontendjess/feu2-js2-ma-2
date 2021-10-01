@@ -14,7 +14,7 @@ export default function writeToDOM(
 		}
 
 		domElementIAmGoingToPutHTMLInto.innerHTML += `<li>
-					<span>${groceryItem.name}</span>
+					<span class="groceryitem-bg">${groceryItem.name}</span>
 					<input ${ischecked} type="checkbox" class="checkbox" data-id=${groceryItem.id}>
 				</li>`;
 	});
